@@ -1,4 +1,6 @@
-package User;
+package src.User;
 
-public class Fournisseur extends User {
+public class Fournisseur extends src.User.User{
+
+
 }
