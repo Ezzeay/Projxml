@@ -1,4 +1,5 @@
-package User;
+package src.User;
 
-public class Client extends User{
+public class Client extends src.User.User {
+
 }
