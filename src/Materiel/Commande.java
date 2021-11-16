@@ -1,23 +1,52 @@
 package src.Materiel;
 
-public abstract class Commande {
+import src.Algo.isValid;
+
+
+public abstract class Commande implements isValid {
 
     public int id;
     public int nombre;
-    public String date;
-    public int price;
-    public int L;
-    public int l;
+    public Date date;
+    public Price price;
+    public float L;
+    public float l;
 
-    public Commande(int id, int nombre, String date, int price, int L, int l){
+    public Commande(int id, int nombre, String datetime, float price, float L, float l){
         this.id = id;
         this.nombre = nombre;
-        this.date = date;
-        this.price = price;
+        this.date = new Date(datetime);
+        this.price = new Price(price);
         this.L = L;
         this.l = l;
 
     }
+
+    public float getPrice() {
+        return this.price.getValue();
+    }
+    public float getL(){
+        return this.L;
+    }
+    public float getLong(){
+        return this.l;
+    }
+    public int getId(){
+        return this.id;
+    }
+    public int getNombre(){
+        return this.nombre;
+    }
+
+
+
+        @Override
+        public boolean isValid()
+        {
+            return this.L>this.l;
+        }
+
+
 
 
 }

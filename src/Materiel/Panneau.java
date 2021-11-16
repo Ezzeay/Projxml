@@ -1,8 +1,14 @@
 package src.Materiel;
 
-public class Panneau extends Commande{
-     public Panneau(int id, int nombre, String date, int price, int L, int l){
+import src.Algo.isValid;
+
+public class Panneau extends Commande {
+
+
+     public Panneau(int id, int nombre, String date, float price, float L, float l){
          super(id,nombre,date,price,L,l);
      }
-     
+
+
+
 }
