@@ -7,8 +7,7 @@ import javax.xml.stream.XMLStreamReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
-interface Comparable {
+public interface Comparable {
     public static Planche ReaderPlanche() {
         Planche MyPlanche = null;
         FileInputStream file = null;
@@ -46,8 +45,9 @@ interface Comparable {
                 } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
+
                 try {
-                    reader.nextTag(); //On regarde le premier client
+                    reader.nextTag(); //On regarde la première commande de planche demandée
                 } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
@@ -59,11 +59,16 @@ interface Comparable {
                 int id = Integer.parseInt(reader.getAttributeValue(0));
                 int nombre = Integer.parseInt(reader.getAttributeValue(1));
                 String date = reader.getAttributeValue(2);
-                int price = Integer.parseInt(reader.getAttributeValue(3));
-                int L = Integer.parseInt(reader.getAttributeValue(4));
-                int l = Integer.parseInt(reader.getAttributeValue(5));
-                String commande = "Commande n°" + reader.getAttributeValue(0) + " de " + reader.getAttributeValue(1) + " planches à livrer pour le " + reader.getAttributeValue(2) + " au prix maximal de " + reader.getAttributeValue(3);
-                System.out.println(commande);
+                float price = Float.parseFloat(reader.getAttributeValue(3));
+                try {
+                    reader.nextTag(); //On regarde la première commande de planche demandée
+                } catch (XMLStreamException e) {
+                    e.printStackTrace();
+                }
+                float L = Float.parseFloat(reader.getAttributeValue(0));
+                float l = Float.parseFloat(reader.getAttributeValue(1));
+                //String commande = "Commande n°" + reader.getAttributeValue(0) + " de " + reader.getAttributeValue(1) + " planches à livrer pour le " + reader.getAttributeValue(2) + " au prix maximal de " + reader.getAttributeValue(3);
+                //System.out.println(commande);
                 MyPlanche= new Planche(id, nombre, date, price, L, l);
 
             }
@@ -102,11 +107,13 @@ interface Comparable {
                 } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
+
                 try {
-                    reader.nextTag(); //On regarde le premier client
+                    reader.nextTag(); //On regarde la première commande de planche demandée
                 } catch (XMLStreamException e) {
                     e.printStackTrace();
                 }
+
                 try {
                     reader.nextTag(); //On regarde la première commande de planche demandée
                 } catch (XMLStreamException e) {
@@ -115,11 +122,16 @@ interface Comparable {
                 int id = Integer.parseInt(reader.getAttributeValue(0));
                 int nombre = Integer.parseInt(reader.getAttributeValue(1));
                 String date = reader.getAttributeValue(2);
-                int price = Integer.parseInt(reader.getAttributeValue(3));
-                int L = Integer.parseInt(reader.getAttributeValue(4));
-                int l = Integer.parseInt(reader.getAttributeValue(5));
+                float price = Float.parseFloat(reader.getAttributeValue(3));
+                try {
+                    reader.nextTag(); //On regarde la première commande de planche demandée
+                } catch (XMLStreamException e) {
+                    e.printStackTrace();
+                }
+                float L = Float.parseFloat(reader.getAttributeValue(0));
+                float l = Float.parseFloat(reader.getAttributeValue(1));
                 String commande = "Commande n°" + reader.getAttributeValue(0) + " de " + reader.getAttributeValue(1) + " planches à livrer pour le " + reader.getAttributeValue(2) + " au prix maximal de " + reader.getAttributeValue(3);
-                System.out.println(commande);
+                //System.out.println(commande);
                 MyPanneau = new Panneau(id, nombre, date, price, L, l);
 
 
@@ -131,6 +143,8 @@ interface Comparable {
         return MyPanneau;
 
     }
+
+
 
 
 

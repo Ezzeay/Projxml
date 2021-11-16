@@ -1,2 +1,6 @@
-package src.Algo;public interface isValid {
+package src.Algo;
+
+public interface isValid {
+    boolean isValid();
 }
+
