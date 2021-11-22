@@ -1,6 +1,8 @@
 package src.Algo;
 
+import java.util.List;
+
 public interface isValid {
-    boolean isValid();
+    public Boolean isValid();
 }
 

@@ -9,23 +9,32 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class TestReadXml implements src.Algo.Comparable {
     public static void main(String[] argvs)
     {
+        List<Planche> ClientCommand = new ArrayList<>();
+        List<Panneau> FourCommands = new ArrayList<>();
         FileInputStream file = null;
         try {
             file = new FileInputStream("src/xml/clients.xml");
             XMLInputFactory xmlInFact = XMLInputFactory.newInstance();
             XMLStreamReader reader = xmlInFact.createXMLStreamReader(file);
             Planche MyPlanche = Comparable.ReaderPlanche();
+
             Panneau MyPanneau = Comparable.ReaderPanneaux();
             boolean test = MyPanneau.isValid();
             System.out.println("Check this " + test);
 
+            ClientCommand.add(MyPlanche);
+            FourCommands.add(MyPanneau);
             float pricePanneau = MyPanneau.getPrice();
             float pricePlanche = MyPlanche.getPrice();
+
+            Boolean checkP = ClientCommand.isValid();
 
             if(reader.hasNext()) {
 

@@ -41,7 +41,7 @@ public abstract class Commande implements isValid {
 
 
         @Override
-        public boolean isValid()
+        public Boolean isValid()
         {
             return this.L>this.l;
         }

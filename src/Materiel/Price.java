@@ -8,7 +8,7 @@ public class Price implements isValid{
         this.value = value;
     }
     @Override
-    public boolean isValid() {
+    public Boolean isValid() {
         return this.value > 0;
     }
 

@@ -8,8 +8,8 @@ public class Date implements isValid{
     private int m;
     private int year;
     public Date(String date){
-        System.out.println(date);
-        String[] values = date.split(".");
+
+        String[] values = date.split("\\.");
         this.d = Integer.parseInt(values[0]);
         this.m = Integer.parseInt(values[1]);
         this.year = Integer.parseInt(values[2]);
@@ -20,7 +20,7 @@ public class Date implements isValid{
     }
 
     @Override
-    public boolean isValid() {
+    public Boolean isValid() {
         String pattern = "dd-mm-yy";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
         String date = simpleDateFormat.format(new java.util.Date());
