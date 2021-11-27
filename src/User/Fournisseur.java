@@ -6,21 +6,19 @@ import java.util.List;
 import src.Algo.*;
 import src.Materiel.*;
 
-public class Fournisseur<E> extends User<E> implements isValid{
-    List<Planche> FourCommands = new ArrayList<Planche>();
+import java.util.List;
 
-
-    @Override
-    public Boolean isValid() {
-        List<Boolean> validFourniCommand = new ArrayList<>();
-        for (int tmp = 0; tmp < FourCommands.size();tmp++) {
-            validFourniCommand.add(FourCommands.get(tmp).date.isValid() || FourCommands.get(tmp).price.isValid() || FourCommands.get(tmp).isValid());
-            System.out.println("Test Index" + tmp + "is equal to" + validFourniCommand.get(tmp));
-            if (!validFourniCommand.get(tmp)) {
-                return validFourniCommand.get(tmp);
-            }
-
-        }
-        return true;
+class Fournisseur implements IGenerable
+{
+    int id;
+    List<Panneau> ListPanneau;
+    public Fournisseur(int id, List<Panneau> ListPanneau)
+    {
+        this.id = id;
+        this.ListPanneau = ListPanneau;
     }
+
+
+
 }
+
