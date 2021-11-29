@@ -43,7 +43,7 @@ public abstract class Commande implements isValid {
         @Override
         public Boolean isValid()
         {
-            return this.L>this.l;
+            return this.L>this.l && this.date.isValid() && this.price.isValid();
         }
 
 
