@@ -1,4 +1,4 @@
-package src.Materiel;
+package src.User;
 
 import src.Algo.isValid;
 
@@ -8,7 +8,7 @@ public class Price implements isValid{
         this.value = value;
     }
     @Override
-    public Boolean isValid() {
+    public boolean isValid() {
         return this.value > 0;
     }
 

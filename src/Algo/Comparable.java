@@ -1,6 +1,6 @@
 package src.Algo;
 
-import src.Materiel.*;
+
 import src.User.*;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;

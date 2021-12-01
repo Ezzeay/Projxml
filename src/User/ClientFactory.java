@@ -1,26 +1,25 @@
 package src.User;
 
 
-import src.Materiel.Panneau;
-import src.Materiel.Planche;
-
 import java.util.List;
 
 public class ClientFactory implements IFactory{
 
     @Override
-    public Igenerable generate() {
-        return null;
-    }
+    public Igenerable generate(int id,List<Data> d) {
+        Client c = new Client(id,d);
+        try {
+            if (c.isValid() == false){
+                throw new ArithmeticException("Data is Invalid for client ID : \\" + id);
 
-    public Igenerable generatef(int id, List<Panneau> p) {
-        return null;
-    }
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
-
-    public Igenerable generatec(int id, List<Planche> p) {
-        Client c = new Client(id,p);
         return c;
     }
+
 
 }

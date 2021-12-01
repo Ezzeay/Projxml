@@ -1,29 +1,25 @@
 package src.User;
 
-import src.Materiel.Panneau;
-import src.Materiel.Planche;
-
 import java.util.List;
 
 public class FournFactory implements IFactory {
 
 
     @Override
-    public Igenerable generate() {
-        return null;
-    }
+    public Igenerable generate(int id, List<Data> d) {
+        Fournisseur f = new Fournisseur(id,d);
+        try {
+            if (f.isValid() == false){
+                throw new ArithmeticException("Data is Invalid for USER ID : \\" + id);
 
-
-    public Igenerable generatef(int id, List<Panneau> p) {
-        Fournisseur f = new Fournisseur(id, p);
-
+            }
+        }catch(ArithmeticException e){
+            e.printStackTrace();
+        }
         return f;
     }
 
 
-    public Igenerable generatec(int id, List<Planche> p) {
-        return null;
-    }
 }
 
 

@@ -1,35 +1,49 @@
 package src.User;
 
+import src.Algo.isValid;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import src.Algo.*;
-import src.Materiel.*;
 
-class Fournisseur  implements Igenerable{
-    List<Panneau> FourCommands = new ArrayList<Panneau>();
+
+
+class Fournisseur  implements Igenerable, isValid {
+    List<Panneau> FourCommands = new ArrayList<>();
     int id;
-    Fournisseur(int id, List<Panneau> ListPanneau){
-        this.id = id;
-        this.FourCommands = ListPanneau;
 
+    Fournisseur(int id, List<Data> d){
+        this.id = id;
+        for (int i = 0; i < d.size(); i++) {
+            this.FourCommands.add(new Panneau(d.get(i)));
+        }
     }
-    Fournisseur(){
-        this.id = -1;
-        this.FourCommands = new ArrayList<Panneau>();
+    @Override
+    public int getId() {
+        return this.id;
     }
 
     @Override
-    public boolean isValid() {
-        List<Boolean> validFourniCommand = new ArrayList<>();
-        for (int tmp = 0; tmp < FourCommands.size();tmp++) {
-            validFourniCommand.add(FourCommands.get(tmp).date.isValid() || FourCommands.get(tmp).price.isValid() || FourCommands.get(tmp).isValid());
-            //System.out.println("Test Index" + tmp + "is equal to" + validFourniCommand.get(tmp));
-            if (!validFourniCommand.get(tmp)) {
-                return validFourniCommand.get(tmp);
-            }
-
-        }
-        return true;
+    public int getSize() {
+        return this.FourCommands.size();
     }
+
+
+
+    @Override
+    public boolean isValid() {
+        boolean bp = true;
+        for (int i = 0; i < this.FourCommands.size(); i++) {
+            Panneau p = this.FourCommands.get(i);
+            boolean tmp =  p.isValid();
+            bp = bp && tmp;
+        }
+        if (bp == false){
+            System.out.println("Client -> Planche : NOT VALID");
+        }
+
+        return bp;
+    }
+
+
+
 }

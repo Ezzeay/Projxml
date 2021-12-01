@@ -1,34 +1,52 @@
 package src.User;
 
+import src.Algo.isValid;
+
 import java.util.ArrayList;
 import java.util.List;
-import src.Algo.*;
-import src.Materiel.Planche;
+
+import static java.lang.Float.parseFloat;
+import static java.lang.Integer.parseInt;
 
 
-class Client implements Igenerable {
+public class Client implements Igenerable, isValid {
     List<Planche> ClientCommand = new ArrayList<>();
     int id;
-    Client(){
-        this.id = -1;
-        this.ClientCommand = new ArrayList<Planche>();
-    }
-    Client(int id,List<Planche> listPlanche){
-        this.ClientCommand = listPlanche;
+
+    Client(int id, List<Data> listPlanche) {
         this.id = id;
+        for (int i = 0; i < listPlanche.size(); i++) {
+            this.ClientCommand.add(new Planche(listPlanche.get(i)));
+        }
     }
+    @Override
+    public int getId(){
+        return this.id;
+    }
+
+    @Override
+    public int getSize() {
+        return this.ClientCommand.size();
+    }
+
 
 
     @Override
     public boolean isValid() {
-        List<Boolean> validClientCommand = new ArrayList<>();
-        for (int tmp = 0; tmp < ClientCommand.size();tmp++) {
-            validClientCommand.add(ClientCommand.get(tmp).date.isValid() || ClientCommand.get(tmp).price.isValid() || ClientCommand.get(tmp).isValid());
-            System.out.println("Test Index" + tmp + "is equal to" + validClientCommand.get(tmp));
-            if (!validClientCommand.get(tmp)) {
-                return validClientCommand.get(tmp);
-            }
+        boolean bp = true;
+        for (int i = 0; i < this.ClientCommand.size(); i++) {
+            Planche p = this.ClientCommand.get(i);
+            boolean tmp =  p.isValid();
+            bp = bp && tmp;
         }
-        return true;
+        if (bp == false){
+            System.out.println("Client -> Planche : NOT VALID");
+        }
+
+        return bp;
     }
+
+
+
+
 }
