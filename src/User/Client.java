@@ -5,7 +5,6 @@ import src.Algo.isValid;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
 
@@ -29,6 +28,18 @@ public class Client implements Igenerable, isValid {
         return this.ClientCommand.size();
     }
 
+
+
+
+    @Override
+    public List<Planche> getListPLanche() {
+        return this.ClientCommand;
+    }
+
+    @Override
+    public List<Panneau> getListPanneau() {
+        return null;
+    }
 
 
     @Override

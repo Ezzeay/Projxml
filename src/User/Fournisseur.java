@@ -27,6 +27,15 @@ class Fournisseur  implements Igenerable, isValid {
         return this.FourCommands.size();
     }
 
+    @Override
+    public List<Planche> getListPLanche() {
+        return null;
+    }
+
+    @Override
+    public List<Panneau> getListPanneau() {
+        return this.FourCommands;
+    }
 
 
     @Override

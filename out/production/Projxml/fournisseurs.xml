@@ -6,7 +6,7 @@
     <panneau id="1" nombre="20" date="14.12.22" prix="12.00">
       <dim L="50.00" l="30.00" />
     </panneau>
-    <panneau id="2" nombre="18" date="06.01.22" prix="34.00">
+    <panneau id="2" nombre="1" date="06.01.22" prix="34.00">
       <dim L="150.00" l="130.00" />
     </panneau>
   </fournisseur>
@@ -15,7 +15,7 @@
       <dim L="50.00" l="30.00" />
     </panneau>
     <panneau id="1" nombre="10" date="26.10.22" prix="14.00">
-      <dim L="70.00" l="30.00" />
+      <dim L="50.00" l="30.00" />
     </panneau>
   </fournisseur>
 </fournisseurs>

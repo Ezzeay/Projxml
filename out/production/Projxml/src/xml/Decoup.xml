@@ -1,0 +1,32 @@
+<decoupes> 
+<decoupe> 
+<client id =5planche=1/> 
+<fournisseur id= 0 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+<decoupe> 
+<client id =1planche=1/> 
+<fournisseur id= 0 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+<decoupe> 
+<client id =2planche=1/> 
+<fournisseur id= 0 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+<decoupe> 
+<client id =5planche=1/> 
+<fournisseur id= 1 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+<decoupe> 
+<client id =1planche=1/> 
+<fournisseur id= 1 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+<decoupe> 
+<client id =2planche=1/> 
+<fournisseur id= 1 panneau=1\> 
+<position x=0 y =0/> 
+</decoupe> 
+</decoupes> 

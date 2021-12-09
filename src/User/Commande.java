@@ -9,7 +9,7 @@ import static java.lang.Float.parseFloat;
 import static java.lang.Integer.parseInt;
 
 
-public class Commande implements isValid {
+public class Commande implements isValid, Comparable<Commande> {
 
     public int id;
     public int nombre;
@@ -58,6 +58,9 @@ public class Commande implements isValid {
     public int getNombre(){
         return this.nombre;
     }
+    void setNombre(int x){
+        this.nombre = x;
+    }
 
 
 
@@ -71,5 +74,13 @@ public class Commande implements isValid {
 
 
 
-
+    public int compareTo(Commande o) {
+        float f = o.getL() - this.L;
+        if (f == 0){
+            return (int) (o.getLong() - this.l);
+        }
+        else {
+            return (int) f;
+        }
+    }
 }

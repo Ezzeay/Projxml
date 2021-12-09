@@ -1,9 +1,8 @@
 package src.User;
 
 import src.Algo.isValid;
-import java.util.List;
 
-public class Panneau extends Commande implements isValid {
+public class Panneau extends Commande implements isValid  {
 
 
      public Panneau(int id, int nombre, String date, float price, float L, float l){
@@ -13,6 +12,14 @@ public class Panneau extends Commande implements isValid {
          super(d);
 
      }
+     public float GetL(Igenerable f){
+         return super.getL();
+     }
+     public float getl(){
+         return super.getLong();
+
+     }
+
     @Override
     public boolean isValid() {
 

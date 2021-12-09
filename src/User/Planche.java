@@ -2,8 +2,6 @@ package src.User;
 
 import src.Algo.isValid;
 
-import java.util.List;
-
 public class Planche extends Commande implements isValid {
     public Planche(int id, int nombre, String date, float price, float L, float l){
         super(id,nombre,date,price,L,l);
@@ -15,5 +13,9 @@ public class Planche extends Commande implements isValid {
     public boolean isValid() {
 
         return super.isValid();
+    }
+
+    public float getl() {
+        return super.getLong();
     }
 }
