@@ -74,7 +74,7 @@ public class Decoup {
                         }
                         dec = new Decoup(idC,pn.get(pnsize).getId(),pru,idC,pl.get(plsize).getId(),nb,offsetx,offsety,wrappingV,wrappingH);
                         d.add(dec);
-                        String filename = "Decoup ID CL :" + pl.get(plsize).getId() +".svg";
+                        String filename = "src/Decoup/ID CL :" + pl.get(plsize).getId() +".svg";
                         XMLWriter.writeSVG(filename,dec,pl.get(plsize),pn.get(pnsize));
                         nbpn = nbpn - pru;
                         pn.get(pnsize).setNombre(nbpn);
