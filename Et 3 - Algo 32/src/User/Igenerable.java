@@ -4,9 +4,9 @@ import java.util.List;
 
 public interface Igenerable {
 
-    public boolean isValid();
-    public int getId();
-    public int getSize();
+     boolean isValid();
+     int getId();
+     int getSize();
     List<Planche> getListPLanche();
     List<Panneau> getListPanneau();
 }

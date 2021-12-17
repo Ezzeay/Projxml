@@ -7,20 +7,20 @@ import java.io.IOException;
 import java.util.*;
 
 public class Decoup {
-    int idf;
-    int idPanneau;
-    int nbPanneau;
-    int idc;
-    int idPlanche;
-    int wrappingH;
-    int wrappingV;
-    int nbPlanche;
-    float PlancheL;
-    float Planchel;
-    float PanneauL;
-    float Panneaul;
-    float posdecx;
-    float posdecy;
+    private int idf;
+    private int idPanneau;
+    private int nbPanneau;
+    private int idc;
+    private int idPlanche;
+    private int wrappingH;
+    private int wrappingV;
+    private int nbPlanche;
+    private float PlancheL;
+    private float Planchel;
+    private float PanneauL;
+    private float Panneaul;
+    private float posdecx;
+    private float posdecy;
 
     Decoup(int idf, int idPanneau,float PanneauL,float Panneaul,int nbPanneau, int idc, int idPlanche,float PlancheL,float Planchel,int nbPlanche, float posdecx, float posdecy,int wrappingV,int wrappingH) {
         this.idf = idf;
@@ -40,70 +40,10 @@ public class Decoup {
     }
 
 
+
+
+
     static List<Decoup> DecoupALL(List<Igenerable> p, List<Igenerable> f) throws IOException {
-        List<Decoup> d = new ArrayList<>();
-        Decoup dec;
-        List<Panneau> pn = sortbyLPN(f);
-        List<Planche> pl = sortbyLPL(p);
-        int tiles;
-        int plsize = 0,pnsize = 0;
-        float Lpl,Lpn,lpl,lpn;
-        int nbpn,nb = 0,nbP;
-        while (pnsize < pn.size() && plsize < pl.size()){
-            Lpn = pn.get(pnsize).getL();
-            lpn = pn.get(pnsize).getLong();
-            nbpn = pn.get(pnsize).getNombre();
-            Lpl = pl.get(plsize).getL();
-            lpl = pl.get(plsize).getLong();
-            nb  = pl.get(plsize).getNombre();
-            float offsetx,offsety;
-            nbP = 0;
-            int idF = getidPN(f,pn.get(pnsize).getId(),nbpn);
-            int idC = getidPL(p,pl.get(plsize).getId(),nb);
-            if (idF == -1 || idC == -1) {
-                throw new ArithmeticException("Materiel not found");
-            }
-            if (Lpn > Lpl && lpn > lpl) {
-
-                if (nbP < nbpn) {
-                    int wrappingV = (int) (Lpn / Lpl);
-                    int wrappingH = (int) (lpn / lpl);
-                    tiles = wrappingH * wrappingV;
-                    if (nbpn * tiles > nb) {
-                        nbP++;
-                        int pru = (nb / tiles) + 1 ;
-                        if (wrappingH > nb){
-                             offsetx = nb * Lpl;
-                             offsety = 1 * Lpl;
-                        }
-                        else
-                        {
-                             offsetx = (nb % wrappingH) * lpl;
-                             offsety = ((nb / wrappingH) + 1) * Lpl;
-                        }
-                        dec = new Decoup(idC,pn.get(pnsize).getId(),pn.get(pnsize).getL(),pn.get(pnsize).getl(),pru,idC,pl.get(plsize).getId(),pl.get(plsize).getL(),pl.get(plsize).getl(),nb,offsetx,offsety,wrappingV,wrappingH);
-                        d.add(dec);
-                        String filename = "src/Decoup/ID CL :" + pl.get(plsize).getId() +".svg";
-                        XMLWriter.writeSVG(filename,dec,pl.get(plsize),pn.get(pnsize));
-                        nbpn = nbpn - pru;
-                        pn.get(pnsize).setNombre(nbpn);
-                        plsize++;
-                    }
-                    else {
-                        pnsize++;
-                    }
-                }
-                else {
-                    pnsize++;
-                }
-            }
-        }
-        return d;
-    }
-
-
-
-    static List<Decoup> DecoupALL32(List<Igenerable> p, List<Igenerable> f) throws IOException {
         List<Decoup> d = new ArrayList<>();
         Decoup dec;
         List<Panneau> pn = sortbyLPN(f);
@@ -163,7 +103,7 @@ public class Decoup {
             }
         }
         String filename = "src/Decoup/Alg III.II Four ID :" + idF + "Panneau ID :" + pn.get(pnsize).getId() +".svg";
-        XMLWriter.writeSVG3(filename,d);
+        XMLWriter.writeSVG(filename,d);
         return d;
 
     }

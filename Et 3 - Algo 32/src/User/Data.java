@@ -4,7 +4,7 @@ import src.Algo.isValid;
 
 import java.util.List;
 
-public class Data {
+ public class Data {
     List<String> mylist;
     public Data(List<String> l){
         this.mylist = l;

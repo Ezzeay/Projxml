@@ -8,7 +8,7 @@ import java.util.List;
 import static java.lang.Integer.parseInt;
 
 
-public class Client implements Igenerable, isValid {
+class Client implements Igenerable, isValid {
     List<Planche> ClientCommand = new ArrayList<>();
     int id;
 
@@ -25,10 +25,8 @@ public class Client implements Igenerable, isValid {
 
     @Override
     public int getSize() {
-        return this.ClientCommand.size();
+        return 0;
     }
-
-
 
 
     @Override

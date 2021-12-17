@@ -11,12 +11,12 @@ import static java.lang.Integer.parseInt;
 
 public class Commande implements isValid, Comparable<Commande> {
 
-    public int id;
-    public int nombre;
-    public Date date;
-    public Price price;
-    public float L;
-    public float l;
+    private int id;
+    private int nombre;
+    private Date date;
+    private Price price;
+    private float L;
+    private float l;
     final int ATTR = 6;
 
     public Commande(int id, int nombre, String datetime, float price, float L, float l){
