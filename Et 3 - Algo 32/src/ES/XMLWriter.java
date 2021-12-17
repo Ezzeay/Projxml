@@ -27,18 +27,17 @@ public class XMLWriter {
             float offsetx = 0;
             int offsety = 0;
             for (int i = 0; i < d.size(); i++) {
-                System.out.println((d.get(i).getNbPlanche()));
+
                 for (int j = 0; j < d.get(i).getNbPlanche(); j++) {
                     if(offsetx < d.get(i).getPnL()*10){
                         float width = d.get(i).getPlL() * 10;
                         float height = d.get(i).getPll()*10;
                         float posx = d.get(i).getPosdecx()*10;
-                        float posy = d.get(i).getPosdecx()*10;
-                        System.out.println("Check offset " + offsetx);
-                        System.out.println("Check NBPL " + d.get(i).getNbPlanche());
-                        System.out.println("Check width " + width);
-                        System.out.println("Check height " + height);
-                        filewriter.write("<rect x=\""+ posx +"\" y=\""+offsety+"\" width=\""+width+"\" height=\""+height+"\" style=\"fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4\" />\n"
+                        float posy = d.get(i).getPosdecy()*10;
+                        if (posx == 0){
+                            offsetx = 0;
+                        }
+                        filewriter.write("<rect x=\""+ posx +"\" y=\""+posy+"\" width=\""+width+"\" height=\""+height+"\" style=\"fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9\" />\n"
                         );
                         offsetx = offsetx + width;
 

@@ -176,10 +176,7 @@ public class Decoup {
         }
 
         Collections.sort(pl);
-        for (int i = 0; i < pl.size(); i++) {
-            System.out.println("L = " + pl.get(i).getLong() + " l = " + pl.get(i).getl());
 
-        }
 
         return pl;
 

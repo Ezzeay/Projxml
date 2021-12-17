@@ -5,13 +5,60 @@
 
   <rect width="100%" height="100%" fill="peru" />
 
-<rect x="0.0" y="0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="350.0" y="0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="600.0" y="0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="900.0" y="0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="1100.0" y="0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="1220.0" y="0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
-<rect x="0.0" y="0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:1;fill-opacity:0.9;stroke-opacity:0.4" />
+<rect x="0.0" y="0.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="0.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="0.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="0.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="0.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="0.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="180.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="180.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="180.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="180.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="180.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="180.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="360.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="360.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="360.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="360.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="360.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="360.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="540.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="540.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="540.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="540.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="540.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="540.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="720.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="720.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="720.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="720.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="720.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="720.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="900.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="900.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="900.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="900.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="900.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="900.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="1080.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="1080.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="1080.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="1080.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="1080.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="1080.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="1260.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="1260.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="1260.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="1260.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="1260.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="1260.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="0.0" y="1440.0" width="350.0" height="260.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="350.0" y="1440.0" width="250.0" height="180.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="600.0" y="1440.0" width="300.0" height="150.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="900.0" y="1440.0" width="200.0" height="90.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1100.0" y="1440.0" width="120.0" height="80.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
+<rect x="1220.0" y="1440.0" width="180.0" height="50.0" style="fill:rgb(255,255,255);stroke:black;stroke-width:2;fill-opacity:0.1;stroke-opacity:0.9" />
   <text x=" 00%" y="50%" font-size="40" text-anchor="left" fill="BLACK">ID Panneau 0 Size L = 146.0 Size l = 145.0</text>
 
 </svg>
