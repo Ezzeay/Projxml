@@ -58,6 +58,7 @@ public class Commande implements isValid, Comparable<Commande> {
     public int getNombre(){
         return this.nombre;
     }
+    public void reduceNombre(){this.nombre--;}
     void setNombre(int x){
         this.nombre = x;
     }

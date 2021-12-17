@@ -19,7 +19,7 @@ public  class TestReadXml {
         XMLWriter.writeXML("src/xml/DecoupAlg3.xml",dAlg3);
         System.out.println("File Decoup has been generated to --> /src/xml/Decoup.xml");
         System.out.println("File SVG with Algo Part 2 has been generated to --> /src/Decoup");
-        System.out.println("File SVG with Algo Part 3 has been generated to --> /src/Decoup");
+        System.out.println("File SVG with Algo Part 3.II has been generated to --> /src/Decoup");
 
     }
 }

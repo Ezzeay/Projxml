@@ -123,7 +123,7 @@ public class Decoup {
             nb  = pl.get(plsize).getNombre();
             Date datePlanche = pl.get(plsize).getDate();
             Date datePanneau = pn.get(pnsize).getDate();
-            if(datePlanche.Compare(datePanneau)){
+            if(datePlanche.Compare(datePanneau) ){
                 if (offsety < Lpn - offsetoriginal) {
                     idF = getidPN(f, pn.get(pnsize).getId(), nbpn);
                     idC = getidPL(p, pl.get(plsize).getId(), nb);
@@ -135,6 +135,9 @@ public class Decoup {
                     while (offsetx < Lpn - Lpl && nbPl < 1) {
                         offsetx = offsetx + Lpl;
                         nbPl++;
+                        pl.get(plsize).reduceNombre();
+
+
                     }
                     if (nbPl != 0) {
                         dec = new Decoup(idC, pn.get(pnsize).getId(), pn.get(pnsize).getL(), pn.get(pnsize).getl(), 1, idC, pl.get(plsize).getId(), pl.get(plsize).getL(), pl.get(plsize).getl(), nbPl, offsetx/nbPl - Lpl, offsetoriginal, 0, 0);
@@ -176,6 +179,7 @@ public class Decoup {
         }
 
         Collections.sort(pl);
+
 
 
         return pl;

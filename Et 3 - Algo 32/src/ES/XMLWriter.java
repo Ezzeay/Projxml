@@ -27,9 +27,8 @@ public class XMLWriter {
             float offsetx = 0;
             int offsety = 0;
             for (int i = 0; i < d.size(); i++) {
-
-                for (int j = 0; j < d.get(i).getNbPlanche(); j++) {
-                    if(offsetx < d.get(i).getPnL()*10){
+                
+                    if(offsetx < d.get(i).getPnL()*10 && d.get(i).getNbPlanche() > 0 ){
                         float width = d.get(i).getPlL() * 10;
                         float height = d.get(i).getPll()*10;
                         float posx = d.get(i).getPosdecx()*10;
@@ -41,7 +40,8 @@ public class XMLWriter {
                         );
                         offsetx = offsetx + width;
 
-                    }
+
+
 
                 }
             }
